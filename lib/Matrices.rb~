@@ -65,8 +65,7 @@ class Matrices
 		resultado= Matrices.new(@ancho)
 		for i in 0..ancho
        			for j in 0..ancho
-				puts matriz[i][j]	
-       				resultado[i][j]=-matriz[i][j]
+				resultado[i][j]=-matriz[i][j]
        			end
        		end
        	resultado

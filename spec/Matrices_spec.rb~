@@ -34,9 +34,7 @@ describe Matrices do
         	it "Opuesto" do
 			for i in 0...@m1.ancho
 				for j in 0...@m1.ancho
-					puts
-					puts @m1.matriz[i][j]	
-               				(-@m1[i][j]).should eq(-1)
+					(-@m1[i][j]).should eq(-1)
 				end
 			end
        		end
