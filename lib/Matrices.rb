@@ -1,8 +1,6 @@
 class Matrices
 	attr_reader :ancho, :matriz
 	def initialize(ancho,*elements)
-		#raise "Los parametros deben ser de tipo Array, int, int y del tamaño correcto"
-		#		unless elements.instance_of?Array || (ancho*ancho) != elements.size 
 					@matriz= Array.new(ancho)
 					@matriz.map!{Array.new(ancho)}
 					for i in 0...ancho
@@ -11,8 +9,6 @@ class Matrices
 						end
 					end
 					@ancho=ancho
-		#		end
-
 	end
 	def [](i)
 		@matriz[i]
@@ -23,8 +19,6 @@ class Matrices
 	end
 
 	def +(other)
-		#raise "No se puede multiplicar el elemento"
-		#	unless other.instance_of?Matrices || ancho!=other.ancho
 				resultado= Matrices.new(@ancho)
 				i,j=0,0
 				for i in 0..@ancho
@@ -33,11 +27,8 @@ class Matrices
 					end
 				end
 				return resultado
-		#	end
 	end
 	def -(other)
-		#raise "No se puede multiplicar el elemento"
-		#	unless other.instance_of?Matrices || ancho!=other.ancho
 				resultado= Matrices.new(@ancho)
 				for i in 0..ancho
 					for j in 0..ancho
@@ -45,11 +36,8 @@ class Matrices
 					end
 				end
 				resultado
-		#	end
 	end
 	def *(other)
-		#raise "No se puede multiplicar el elemento"
-		#	unless other.instance_of?Matrices || ancho!=other.ancho
 				resultado= Matrices.new(@ancho)
 				for i in 0..ancho
        				 for j in 0..ancho
@@ -59,7 +47,6 @@ class Matrices
         			end
 				end
 				resultado				
-		#	end
 	end
 	def -@
 		resultado= Matrices.new(@ancho)
