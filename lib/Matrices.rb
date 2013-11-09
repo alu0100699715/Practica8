@@ -1,3 +1,4 @@
+require "Fracciones.rb"
 class Matrices
 	attr_reader :ancho, :matriz
 	def initialize(ancho,*elements)
@@ -32,7 +33,7 @@ class Matrices
 				resultado= Matrices.new(@ancho)
 				for i in 0..ancho
 					for j in 0..ancho
-						resultado[i][j]=matriz[i][j]-other.matriz[i][j]
+						resultado[i][j]=@matriz[i][j]-other.matriz[i][j]
 					end
 				end
 				resultado
@@ -42,12 +43,13 @@ class Matrices
 				for i in 0..ancho
        				 for j in 0..ancho
                 			for k in 0..ancho
-                        		resultado[i][j]+=matriz[i][k]*other.matriz[k][j]
+                        		resultado[i][j]+=@matriz[i][k]*other.matriz[k][j]
                 			end		
         			end
 				end
 				resultado				
 	end
+	
 	def -@
 		resultado= Matrices.new(@ancho)
 		for i in 0..ancho
@@ -56,5 +58,16 @@ class Matrices
        			end
        		end
        	resultado
+	end
+	
+	def == (other)
+		for i in 0...@m1.ancho
+			for j in 0...@m1.ancho
+        	 		if(@matriz[i][j]!=other.matriz[i][j])
+					return false
+				end				
+			end
+		end
+		return true
 	end
 end
