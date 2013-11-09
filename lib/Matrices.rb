@@ -61,8 +61,8 @@ class Matrices
 	end
 	
 	def == (other)
-		for i in 0...@m1.ancho
-			for j in 0...@m1.ancho
+		for i in 0..ancho
+			for j in 0..ancho
         	 		if(@matriz[i][j]!=other.matriz[i][j])
 					return false
 				end				
