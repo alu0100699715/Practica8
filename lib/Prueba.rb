@@ -25,3 +25,4 @@ end
 for i in 0...@m10.ancho*@m10.ancho
 	puts @m10.matriz[i]
 end
+

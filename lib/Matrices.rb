@@ -33,7 +33,7 @@ class Matrices
 				resultado
 	end
 	def * (other)
-				resultado= Matrices.new(@ancho*@ancho)
+				resultado= Matrices.new(@ancho)
 				for i in 0...@ancho*@ancho
 					resultado[i]=@matriz[i]
 				end
