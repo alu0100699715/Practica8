@@ -32,13 +32,13 @@ describe Matrices do
 			(-@m1).should eq(@m6)
 		end
 
-			it "Sumar modificacion" do
-			(@m7+@m8).should eq(@m9)
-		end
+		#	it "Sumar modificacion" do
+		#	(@m1+@m2).should eq(@m3)
+		#end
 
-			it "Multiplicar modificacion" do
-			(@m7*@m8).should eq(@m10)
-		end
+		#	it "Multiplicar modificacion" do
+		#	(@m1*@m2).should eq(@m5)
+		#end
 		
 		
                 
