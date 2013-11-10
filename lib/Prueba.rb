@@ -9,6 +9,9 @@ require 'Matrices.rb'
 @m10=Matrices.new(2,Fracciones.new(1,2),Fracciones.new(3,5),Fracciones.new(11,40),Fracciones.new(49,150))
 
 
+
+
+
 @suma=@m1+@m2
 @multiplicacion=@m7*@m8
 
@@ -17,4 +20,8 @@ if @suma==@m3
 end
 if @multiplicacion==@m10
 	puts "Multiplicacion correcta"
+end
+
+for i in 0...@m10.ancho*@m10.ancho
+	puts @m10.matriz[i]
 end

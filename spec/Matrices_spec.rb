@@ -21,11 +21,11 @@ describe Matrices do
 		end	
 
                 it "Restar" do
-			(@m1+@m2).should eq(@m4)
+			(@m1-@m2).should eq(@m4)
 		end
 
                 it "Multiplicar" do
-			(@m1+@m2).should eq(@m5)
+			(@m1*@m2).should eq(@m5)
 		end
 
         	it "Opuesto" do
