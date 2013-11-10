@@ -1,0 +1,20 @@
+require 'Matrices.rb'
+
+@m1=Matrices.new(2,1,1,1,1)
+@m2=Matrices.new(2,2,2,2,2)
+@m3=Matrices.new(2,3,3,3,3)
+@m7=Matrices.new(2,Fracciones.new(1,2),Fracciones.new(1,3),Fracciones.new(1,4),Fracciones.new(1,5))
+@m8=Matrices.new(2,Fracciones.new(1,2),Fracciones.new(2,3),Fracciones.new(3,4),Fracciones.new(4,5))
+@m9=Matrices.new(2,Fracciones.new(1,1),Fracciones.new(1,1),Fracciones.new(1,1),Fracciones.new(1,1))
+@m10=Matrices.new(2,Fracciones.new(1,2),Fracciones.new(3,5),Fracciones.new(11,40),Fracciones.new(49,150))
+
+
+@suma=@m1+@m2
+@multiplicacion=@m7*@m8
+
+if @suma==@m3
+	puts "Suma correcta"
+end
+if @multiplicacion==@m10
+	puts "Multiplicacion correcta"
+end
