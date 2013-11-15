@@ -1,4 +1,4 @@
-require 'Matrices.rb'
+require './Matrices'
 
 @m1=Matrices.new(2,1,1,1,1)
 @m2=Matrices.new(2,2,2,2,2)
@@ -11,6 +11,8 @@ require 'Matrices.rb'
 
 @suma=@m1+@m2
 @multiplicacion=@m7*@m8
+
+puts "#{@suma.matriz}"
 
 if @suma==@m3
 	puts "Suma correcta"

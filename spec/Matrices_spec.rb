@@ -8,7 +8,7 @@ describe Matrices do
 		@m2=Matrices.new(2,2,2,2,2)
 		@m3=Matrices.new(2,3,3,3,3)
 		@m4=Matrices.new(2,-1,-1,-1,-1)
-		@m5=Matrices.new(2,2,2,2,2)
+		@m5=Matrices.new(2,4,4,4,4)
 		@m6=Matrices.new(2,-1,-1,-1,-1)
 		@m7=Matrices.new(2,Fracciones.new(1,2),Fracciones.new(1,3),Fracciones.new(1,4),Fracciones.new(1,5))
 		@m8=Matrices.new(2,Fracciones.new(1,2),Fracciones.new(2,3),Fracciones.new(3,4),Fracciones.new(4,5))
@@ -32,13 +32,13 @@ describe Matrices do
 			(-@m1).should eq(@m6)
 		end
 
-		#	it "Sumar modificacion" do
-		#	(@m1+@m2).should eq(@m3)
-		#end
+			it "Sumar modificacion" do
+			(@m1+@m2).should eq(@m3)
+		end
 
-		#	it "Multiplicar modificacion" do
-		#	(@m1*@m2).should eq(@m5)
-		#end
+			it "Multiplicar modificacion" do
+			(@m1*@m2).should eq(@m5)
+		end
 		
 		
                 
